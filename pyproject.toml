@@ -1,0 +1,20 @@
+[project]
+name = "subgraphdemo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Srikanth Vusikarla", email = "srikanth.vusikarla@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langgraph>=1.2.12",
+    "mcp[cli]>=2.3.0",
+]
+
+[project.scripts]
+subgraphdemo = "subgraphdemo:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
